@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="rsw-eU-ti1">
+            <objects>
+                <viewController storyboardIdentifier="SignInViewController" id="bf9-07-Q5h" customClass="SignInViewController" customModule="Test_Messenger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9qS-Kh-jMV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo+Text-white" translatesAutoresizingMaskIntoConstraints="NO" id="Cxs-An-5Lc">
+                                <rect key="frame" x="82" y="94" width="250" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="FH0-z7-V0q"/>
+                                    <constraint firstAttribute="width" constant="250" id="cXR-EW-ksT"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MpV-yE-w8c" userLabel="Cancel button">
+                                <rect key="frame" x="20" y="64.5" width="40" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="Qik-B5-WXt"/>
+                                    <constraint firstAttribute="height" constant="40" id="tuh-40-7Kc"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="arrow.backward.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="cancelButton:" destination="bf9-07-Q5h" eventType="touchUpInside" id="QoR-mW-3bt"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wnx-Rm-TVw" customClass="BaseView" customModule="Test_Messenger" customModuleProvider="target">
+                                <rect key="frame" x="42" y="250.5" width="330" height="405"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f4a-tE-5Yf">
+                                        <rect key="frame" x="25" y="45" width="280" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="QXh-GM-9y0"/>
+                                            <constraint firstAttribute="height" constant="44" id="WwV-fd-Hhl"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.79585909840000002" green="0.79578191040000001" blue="0.80327004189999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" textContentType="email"/>
+                                        <connections>
+                                            <action selector="emailEditingDidBegin:" destination="bf9-07-Q5h" eventType="editingDidBegin" id="pIE-Hy-Uei"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e3h-H5-cVl" customClass="PasswordTextField" customModule="Test_Messenger" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="104" width="280" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="Ojd-Q7-1ub"/>
+                                            <constraint firstAttribute="height" constant="44" id="P9h-rl-cu9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                        <connections>
+                                            <action selector="PasswordEditingDidBegin:" destination="bf9-07-Q5h" eventType="editingDidBegin" id="yOW-zv-Hlf"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eWc-Q9-KWo">
+                                        <rect key="frame" x="25" y="163" width="280" height="44"/>
+                                        <color key="backgroundColor" red="0.0" green="0.53333333329999999" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Svv-zW-xsV"/>
+                                            <constraint firstAttribute="width" constant="280" id="kqj-4h-lf3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                        <state key="normal" title="Войти">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="enterTap:" destination="bf9-07-Q5h" eventType="touchUpInside" id="ahu-U5-3HM"/>
+                                        </connections>
+                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="2qd-8g-gGv">
+                                        <rect key="frame" x="25" y="222" width="280" height="27"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3op-gm-LeZ" customClass="Checkbox" customModule="Test_Messenger" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="28.5" height="27"/>
+                                                <state key="normal" image="checkbox_off"/>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Запомнить меня" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="qg8-Ez-hK3">
+                                                <rect key="frame" x="33.5" y="0.0" width="125" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fwe-qW-OBE">
+                                                <rect key="frame" x="163.5" y="0.0" width="116.5" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Забыли пароль?">
+                                                    <color key="titleColor" red="0.0" green="0.53333333329999999" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
+                                                </variation>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрируясь, вы соглашаетесь с Праилами и Политикой конфиденциальности" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="buo-fo-NRB">
+                                        <rect key="frame" x="25" y="269" width="280" height="24"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="10"/>
+                                        <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="XAb-sc-Ky2">
+                                        <rect key="frame" x="25" y="348" width="280" height="27"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ещё нет аккаунта?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="01S-jm-DSa">
+                                                <rect key="frame" x="0.0" y="0.0" width="118" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGe-Zi-Zeo">
+                                                <rect key="frame" x="133" y="0.0" width="147" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Зарегистрируйтесь">
+                                                    <color key="titleColor" red="0.0" green="0.53333333329999999" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                                </state>
+                                                <variation key="heightClass=regular-widthClass=compact">
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="12"/>
+                                                </variation>
+                                                <connections>
+                                                    <action selector="registerTap:" destination="bf9-07-Q5h" eventType="touchUpInside" id="dfK-zi-8rA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Неверный email или пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ita-bB-bFH">
+                                        <rect key="frame" x="40" y="25" width="130.5" height="12"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                        <color key="textColor" red="1" green="0.28235294119999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="XAb-sc-Ky2" secondAttribute="bottom" constant="30" id="0DP-MP-q7r"/>
+                                    <constraint firstItem="XAb-sc-Ky2" firstAttribute="leading" secondItem="eWc-Q9-KWo" secondAttribute="leading" id="2nw-Tx-ZRH"/>
+                                    <constraint firstItem="2qd-8g-gGv" firstAttribute="leading" secondItem="eWc-Q9-KWo" secondAttribute="leading" id="5i9-fS-Tf5"/>
+                                    <constraint firstItem="f4a-tE-5Yf" firstAttribute="top" secondItem="wnx-Rm-TVw" secondAttribute="top" constant="45" id="6WH-c7-xpb"/>
+                                    <constraint firstItem="f4a-tE-5Yf" firstAttribute="centerX" secondItem="wnx-Rm-TVw" secondAttribute="centerX" id="77q-yT-oFf"/>
+                                    <constraint firstItem="eWc-Q9-KWo" firstAttribute="centerX" secondItem="wnx-Rm-TVw" secondAttribute="centerX" id="Dhy-KX-Cz2"/>
+                                    <constraint firstItem="buo-fo-NRB" firstAttribute="top" secondItem="2qd-8g-gGv" secondAttribute="bottom" constant="20" id="KE6-hU-1SK"/>
+                                    <constraint firstAttribute="width" constant="330" id="Q4f-h6-frr"/>
+                                    <constraint firstItem="ita-bB-bFH" firstAttribute="leading" secondItem="wnx-Rm-TVw" secondAttribute="leading" constant="40" id="XlV-UY-XSt"/>
+                                    <constraint firstItem="buo-fo-NRB" firstAttribute="leading" secondItem="eWc-Q9-KWo" secondAttribute="leading" id="d6d-Y9-S7M"/>
+                                    <constraint firstItem="buo-fo-NRB" firstAttribute="trailing" secondItem="eWc-Q9-KWo" secondAttribute="trailing" id="er3-Ef-V30"/>
+                                    <constraint firstItem="2qd-8g-gGv" firstAttribute="top" secondItem="eWc-Q9-KWo" secondAttribute="bottom" constant="15" id="hyk-IK-PBC"/>
+                                    <constraint firstItem="f4a-tE-5Yf" firstAttribute="top" secondItem="ita-bB-bFH" secondAttribute="bottom" constant="8" symbolic="YES" id="itz-E6-exY"/>
+                                    <constraint firstItem="XAb-sc-Ky2" firstAttribute="trailing" secondItem="eWc-Q9-KWo" secondAttribute="trailing" id="kDj-Y2-Ng3"/>
+                                    <constraint firstItem="2qd-8g-gGv" firstAttribute="trailing" secondItem="eWc-Q9-KWo" secondAttribute="trailing" id="qrA-07-ffy"/>
+                                    <constraint firstItem="e3h-H5-cVl" firstAttribute="centerX" secondItem="wnx-Rm-TVw" secondAttribute="centerX" id="rab-P7-TJj"/>
+                                    <constraint firstAttribute="height" constant="405" id="s3R-IY-jQH"/>
+                                    <constraint firstItem="e3h-H5-cVl" firstAttribute="top" secondItem="f4a-tE-5Yf" secondAttribute="bottom" constant="15" id="t2j-vr-TAZ"/>
+                                    <constraint firstItem="eWc-Q9-KWo" firstAttribute="top" secondItem="e3h-H5-cVl" secondAttribute="bottom" constant="15" id="tRY-1B-5EH"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="O0u-hH-1VS"/>
+                        <color key="backgroundColor" red="0.0" green="0.53333333329999999" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="MpV-yE-w8c" firstAttribute="leading" secondItem="O0u-hH-1VS" secondAttribute="leading" constant="20" id="CwC-7t-IFK"/>
+                            <constraint firstItem="MpV-yE-w8c" firstAttribute="top" secondItem="O0u-hH-1VS" secondAttribute="top" constant="20" id="Ja2-uf-8Mx"/>
+                            <constraint firstItem="Cxs-An-5Lc" firstAttribute="centerX" secondItem="O0u-hH-1VS" secondAttribute="centerX" id="P5K-92-7Zw"/>
+                            <constraint firstItem="wnx-Rm-TVw" firstAttribute="top" secondItem="Cxs-An-5Lc" secondAttribute="bottom" constant="6.5" id="Tfn-Ks-lXo"/>
+                            <constraint firstItem="wnx-Rm-TVw" firstAttribute="centerX" secondItem="O0u-hH-1VS" secondAttribute="centerX" id="VF5-bl-pt6"/>
+                            <constraint firstItem="wnx-Rm-TVw" firstAttribute="centerY" secondItem="O0u-hH-1VS" secondAttribute="centerY" id="omb-BB-2Mp"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="baseView" destination="wnx-Rm-TVw" id="mtD-JD-EH2"/>
+                        <outlet property="checkboxButton" destination="3op-gm-LeZ" id="mDn-fa-xAz"/>
+                        <outlet property="emailTextField" destination="f4a-tE-5Yf" id="YhA-Dw-n3H"/>
+                        <outlet property="enterButton" destination="eWc-Q9-KWo" id="vSE-ET-iqK"/>
+                        <outlet property="noticeLabel" destination="ita-bB-bFH" id="ZlZ-eW-fKR"/>
+                        <outlet property="passwordTextField" destination="e3h-H5-cVl" id="J3N-4j-cEx"/>
+                        <outlet property="registerButton" destination="aGe-Zi-Zeo" id="pcr-ui-5zn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z2G-JO-xDe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="196" y="25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo+Text-white" width="1024" height="512"/>
+        <image name="arrow.backward.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="checkbox_off" width="24" height="24"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="scrollViewTexturedBackgroundColor">
+            <color red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="scrollViewTexturedBackgroundColor">
+            <color red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

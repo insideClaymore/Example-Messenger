@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Bold.ttf">
+            <string>OpenSans-Bold</string>
+        </array>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="2aJ-XH-7BC">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" id="t95-Ah-s6f" customClass="SignUpViewController" customModule="Test_Messenger" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dsX-J4-4lH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo+Text-white" translatesAutoresizingMaskIntoConstraints="NO" id="H1U-qj-ugO">
+                                <rect key="frame" x="82" y="94" width="250" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="Isg-kO-KTQ"/>
+                                    <constraint firstAttribute="width" constant="250" id="UzD-Bk-u5l"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O6K-aR-h4b" userLabel="Cancel button">
+                                <rect key="frame" x="20" y="64.5" width="40" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="nB2-Ta-fkE"/>
+                                    <constraint firstAttribute="width" constant="40" id="qCR-ZC-Vff"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="arrow.backward.circle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="cancelTap:" destination="t95-Ah-s6f" eventType="touchUpInside" id="5Mb-Gc-VDl"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IPE-WR-F6X" customClass="BaseView" customModule="Test_Messenger" customModuleProvider="target">
+                                <rect key="frame" x="42" y="250.5" width="330" height="405"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gND-sV-5Hf">
+                                        <rect key="frame" x="25" y="160.5" width="280" height="44"/>
+                                        <color key="backgroundColor" red="0.0" green="0.53333333329999999" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="1WP-y3-QeB"/>
+                                            <constraint firstAttribute="height" constant="44" id="UpM-1C-CRr"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans-Bold" family="Open Sans" pointSize="17"/>
+                                        <state key="normal" title="Зарегистрироваться">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="registrationButtonTap:" destination="t95-Ah-s6f" eventType="touchUpInside" id="F8g-iH-F5t"/>
+                                        </connections>
+                                    </button>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Некорректный email или пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ka5-fr-vAc">
+                                        <rect key="frame" x="25" y="25" width="144" height="12.5"/>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="9"/>
+                                        <color key="textColor" red="1" green="0.28235294119999998" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="65R-FH-Snn">
+                                        <rect key="frame" x="25" y="42.5" width="280" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="i6U-jr-LFs"/>
+                                            <constraint firstAttribute="height" constant="44" id="qcj-bd-f1x"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" textContentType="email"/>
+                                        <connections>
+                                            <action selector="emailEditingDidBegin:" destination="t95-Ah-s6f" eventType="editingDidBegin" id="xof-z1-Y4B"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Пароль*" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pja-ML-WzK" customClass="PasswordTextField" customModule="Test_Messenger" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="101.5" width="280" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="280" id="Kts-JY-ft0"/>
+                                            <constraint firstAttribute="height" constant="44" id="m7O-cN-T6b"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
+                                        <connections>
+                                            <action selector="passwordEditingDidBegin:" destination="t95-Ah-s6f" eventType="editingDidBegin" id="TB4-Pt-Bfi"/>
+                                        </connections>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="129" translatesAutoresizingMaskIntoConstraints="NO" id="B9b-7h-ZEO">
+                                        <rect key="frame" x="25" y="348" width="280" height="27"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Уже есть аккаунт?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="abB-6k-41D">
+                                                <rect key="frame" x="0.0" y="0.0" width="108.5" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aJU-Pb-vz4">
+                                                <rect key="frame" x="237.5" y="0.0" width="42.5" height="27"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <state key="normal" title="Войти">
+                                                    <color key="titleColor" red="0.02809260786" green="0.56199944020000003" blue="0.88693177700000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="enterTap:" destination="t95-Ah-s6f" eventType="touchUpInside" id="4J4-Yw-JD6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4AZ-PM-IlX" customClass="Checkbox" customModule="Test_Messenger" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="231.5" width="24" height="24"/>
+                                        <state key="normal" image="checkbox_off"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Соглашаюсь с Правилами и Политикой конфиденциальности" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="gYO-b8-UIO">
+                                        <rect key="frame" x="61" y="224.5" width="239" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="0Jv-BJ-jjC"/>
+                                            <constraint firstAttribute="width" constant="239" id="NhO-D3-lAI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="10"/>
+                                        <color key="textColor" systemColor="scrollViewTexturedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="405" id="1Lg-PB-dvy"/>
+                                    <constraint firstItem="65R-FH-Snn" firstAttribute="centerX" secondItem="IPE-WR-F6X" secondAttribute="centerX" id="2Fa-e6-fdE"/>
+                                    <constraint firstItem="4AZ-PM-IlX" firstAttribute="centerY" secondItem="gYO-b8-UIO" secondAttribute="centerY" id="7VN-vS-NrL"/>
+                                    <constraint firstItem="gND-sV-5Hf" firstAttribute="centerX" secondItem="IPE-WR-F6X" secondAttribute="centerX" id="9ad-7W-6Zv"/>
+                                    <constraint firstItem="4AZ-PM-IlX" firstAttribute="leading" secondItem="gND-sV-5Hf" secondAttribute="leading" id="B0f-Mj-dIs"/>
+                                    <constraint firstItem="B9b-7h-ZEO" firstAttribute="trailing" secondItem="gND-sV-5Hf" secondAttribute="trailing" id="EcB-6S-IsA"/>
+                                    <constraint firstItem="B9b-7h-ZEO" firstAttribute="leading" secondItem="gND-sV-5Hf" secondAttribute="leading" id="Jpe-BB-Xdk"/>
+                                    <constraint firstAttribute="width" constant="330" id="MR5-Rb-X3V"/>
+                                    <constraint firstItem="65R-FH-Snn" firstAttribute="top" secondItem="Ka5-fr-vAc" secondAttribute="bottom" constant="5" id="NPs-ID-y49"/>
+                                    <constraint firstItem="Ka5-fr-vAc" firstAttribute="top" secondItem="IPE-WR-F6X" secondAttribute="top" constant="25" id="OaP-dt-wZC"/>
+                                    <constraint firstAttribute="trailing" secondItem="gYO-b8-UIO" secondAttribute="trailing" constant="30" id="PXq-pa-IkE"/>
+                                    <constraint firstItem="gND-sV-5Hf" firstAttribute="top" secondItem="Pja-ML-WzK" secondAttribute="bottom" constant="15" id="Zk0-3i-heL"/>
+                                    <constraint firstItem="Ka5-fr-vAc" firstAttribute="leading" secondItem="IPE-WR-F6X" secondAttribute="leading" constant="25" id="aNS-k1-ySR"/>
+                                    <constraint firstItem="gYO-b8-UIO" firstAttribute="top" secondItem="gND-sV-5Hf" secondAttribute="bottom" constant="20" id="ek7-cQ-UEh"/>
+                                    <constraint firstAttribute="bottom" secondItem="B9b-7h-ZEO" secondAttribute="bottom" constant="30" id="j3w-i5-9c1"/>
+                                    <constraint firstItem="Pja-ML-WzK" firstAttribute="centerX" secondItem="IPE-WR-F6X" secondAttribute="centerX" id="uL3-Ik-SHG"/>
+                                    <constraint firstItem="Pja-ML-WzK" firstAttribute="top" secondItem="65R-FH-Snn" secondAttribute="bottom" constant="15" id="yj6-S5-Xwg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bLn-dq-TCs"/>
+                        <color key="backgroundColor" red="0.0" green="0.53333333329999999" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="IPE-WR-F6X" firstAttribute="centerX" secondItem="bLn-dq-TCs" secondAttribute="centerX" id="0Qw-p5-FjZ"/>
+                            <constraint firstItem="IPE-WR-F6X" firstAttribute="centerY" secondItem="bLn-dq-TCs" secondAttribute="centerY" id="EjT-Tr-Vmk"/>
+                            <constraint firstItem="IPE-WR-F6X" firstAttribute="top" secondItem="H1U-qj-ugO" secondAttribute="bottom" constant="6.5" id="Qh4-TU-UPt"/>
+                            <constraint firstItem="O6K-aR-h4b" firstAttribute="top" secondItem="bLn-dq-TCs" secondAttribute="top" constant="20" id="jK2-ja-5cB"/>
+                            <constraint firstItem="O6K-aR-h4b" firstAttribute="leading" secondItem="bLn-dq-TCs" secondAttribute="leading" constant="20" id="ySg-8e-1tb"/>
+                            <constraint firstItem="H1U-qj-ugO" firstAttribute="centerX" secondItem="bLn-dq-TCs" secondAttribute="centerX" id="yhB-UO-YM5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="baseView" destination="IPE-WR-F6X" id="nAA-pu-4Wb"/>
+                        <outlet property="cancelButton" destination="O6K-aR-h4b" id="59c-bA-lSi"/>
+                        <outlet property="checkboxButton" destination="4AZ-PM-IlX" id="FM2-VJ-G3c"/>
+                        <outlet property="emailTextField" destination="65R-FH-Snn" id="lC6-Yg-V0c"/>
+                        <outlet property="enterButton" destination="aJU-Pb-vz4" id="cuU-pk-p2F"/>
+                        <outlet property="noticeLabel" destination="Ka5-fr-vAc" id="lK3-XP-NuO"/>
+                        <outlet property="passwordTextField" destination="Pja-ML-WzK" id="32D-oV-cPa"/>
+                        <outlet property="registrationButton" destination="gND-sV-5Hf" id="JJ8-Qf-0qs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yzk-nm-69o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="174.77678571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo+Text-white" width="1024" height="512"/>
+        <image name="arrow.backward.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="checkbox_off" width="24" height="24"/>
+        <systemColor name="scrollViewTexturedBackgroundColor">
+            <color red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

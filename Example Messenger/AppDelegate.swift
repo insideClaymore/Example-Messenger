@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Example Messenger
 //
-//  Created by Алексей Макеров on 17.12.2020.
+//  Created by Алексей Макеров on 11.12.2020.
 //
 
 import UIKit

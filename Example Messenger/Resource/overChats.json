@@ -1,0 +1,50 @@
+[
+    {
+        "username": "Angela Ziegler",
+        "userImageString": "person1",
+        "lastMessage": "Take two, and call me in the morning Take two, and call me in the morning Take two, and call me in the morning Take two, and call me in the morning",
+        "id": 1,
+        "time": "12:05",
+        "lastVisit": "last seen 2 minutes ago"
+    },
+    {
+        "username": "Ana Amari",
+        "userImageString": "person2",
+        "lastMessage": "You're powered up, get in there!",
+        "id": 2,
+        "time": "12:35",
+        "lastVisit": "last seen 9 minutes ago"
+    },
+    {
+        "username": "Olivia Colomar",
+        "userImageString": "person3",
+        "lastMessage": "You're just a glitch in the system",
+        "id": 3,
+        "time": "13:12",
+        "lastVisit": "last seen 25 minutes ago"
+    },
+    {
+        "username": "Amélie Lacroix",
+        "userImageString": "person4",
+        "lastMessage": "No one can hide from my sight",
+        "id": 4,
+        "time": "13:55",
+        "lastVisit": "last seen 41 minutes ago"
+    },
+    {
+        "username": "Satya Vaswani",
+        "userImageString": "person5",
+        "lastMessage": "Yahí param vaastavikta hai!",
+        "id": 5,
+        "time": "14:30",
+        "lastVisit": "last seen 55 minutes ago"
+    },
+    {
+        "username": "Hana Song",
+        "userImageString": "person6",
+        "lastMessage": "I get the feeling you're not taking me seriously...",
+        "id": 6,
+        "time": "15:24",
+        "lastVisit": "last seen 1 hour ago"
+    }
+]
