@@ -10,7 +10,6 @@
 		6C537E52258BAE3300E8432A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C537E51258BAE3300E8432A /* AppDelegate.swift */; };
 		6C537E54258BAE3300E8432A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C537E53258BAE3300E8432A /* SceneDelegate.swift */; };
 		6C537E5C258BAE3300E8432A /* Example_Messenger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6C537E5A258BAE3300E8432A /* Example_Messenger.xcdatamodeld */; };
-		6C537E5E258BAE3400E8432A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C537E5D258BAE3400E8432A /* Assets.xcassets */; };
 		6C537E61258BAE3400E8432A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C537E5F258BAE3400E8432A /* LaunchScreen.storyboard */; };
 		6C537E77258BB00800E8432A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C537E75258BB00800E8432A /* Constants.swift */; };
 		6C537E78258BB00800E8432A /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C537E76258BB00800E8432A /* Colors.swift */; };
@@ -52,7 +51,6 @@
 		6C537E51258BAE3300E8432A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C537E53258BAE3300E8432A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		6C537E5B258BAE3300E8432A /* Example_Messenger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Example_Messenger.xcdatamodel; sourceTree = "<group>"; };
-		6C537E5D258BAE3400E8432A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C537E60258BAE3400E8432A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C537E62258BAE3400E8432A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6C537E75258BB00800E8432A /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 				6C537E75258BB00800E8432A /* Constants.swift */,
 				6C537E76258BB00800E8432A /* Colors.swift */,
 				6C537EBE258BB25500E8432A /* overChats.json */,
-				6C537E5D258BAE3400E8432A /* Assets.xcassets */,
 				6C537E5F258BAE3400E8432A /* LaunchScreen.storyboard */,
 			);
 			path = Resource;
@@ -370,7 +367,6 @@
 				6C537ECC258BB31B00E8432A /* SignInViewController.storyboard in Resources */,
 				6C537ED3258BB32900E8432A /* SignUpViewController.storyboard in Resources */,
 				6C537EC6258BB30600E8432A /* SetupProfileViewController.storyboard in Resources */,
-				6C537E5E258BAE3400E8432A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -557,7 +553,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "insideClaymore.Example-Messenger";
+				PRODUCT_BUNDLE_IDENTIFIER = "insideClaymore.Example-Messenger69";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -576,7 +572,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "insideClaymore.Example-Messenger";
+				PRODUCT_BUNDLE_IDENTIFIER = "insideClaymore.Example-Messenger69";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
